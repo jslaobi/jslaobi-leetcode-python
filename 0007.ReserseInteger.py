@@ -1,9 +1,5 @@
-class Solution(object):
-    def reverse(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
+class Solution:
+    def reverse(self, x: int) -> int:
         # 先剥离符号只处理绝对值
         sign = 1 if x >= 0 else -1
         x = abs(x)

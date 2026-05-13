@@ -1,9 +1,5 @@
-class Solution(object):
-    def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+class Solution:
+    def threeSum(self, nums: list[int]) -> list[list[int]]:
         # 先排序，这样方便去重，方便查找，而且这道题总体的复杂度是O(n^2), 排序的时间复杂度是O(nlogn)，所以排序相当于是免费的
         nums.sort()
         result = []
@@ -30,4 +26,4 @@ class Solution(object):
                 else:
                     left += 1
         
-        return result
+        return result 

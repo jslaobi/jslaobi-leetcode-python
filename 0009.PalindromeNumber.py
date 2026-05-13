@@ -1,9 +1,5 @@
-class Solution(object):
-    def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
         if x < 0 or (x != 0 and x % 10 == 0):
             return False
         # 这道题的进阶要求是不允许把整数转成字符串然后用双指针来比较字符，所以我们需要通过%和//来逐位处理整数。
