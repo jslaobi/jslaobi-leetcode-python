@@ -5,6 +5,11 @@
 #         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        """双指针删除链表倒数第 n 个节点。
+
+        时间复杂度: O(n)，n 为链表长度。
+        空间复杂度: O(1)，只使用常数级额外指针空间。
+        """
         dummy = ListNode(0)
         dummy.next = head
         n1 = dummy

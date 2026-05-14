@@ -1,5 +1,10 @@
 class Solution:
     def reverse(self, x: int) -> int:
+        """整数反转。
+
+        时间复杂度: O(log|x|)，|x| 为整数的绝对值，迭代次数与数字位数成正比。
+        空间复杂度: O(1)，只使用常数级额外变量。
+        """
         # 先剥离符号只处理绝对值
         sign = 1 if x >= 0 else -1
         x = abs(x)

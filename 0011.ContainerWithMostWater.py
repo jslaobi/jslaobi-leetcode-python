@@ -1,5 +1,10 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
+        """双指针求最大水容器。
+
+        时间复杂度: O(n)，n 为高度数组长度。
+        空间复杂度: O(1)，只使用常数级额外变量。
+        """
         left, right = 0, len(height) - 1
         max_area = 0
         # 从两头开始，不停的寻找最大面积

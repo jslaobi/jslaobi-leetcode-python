@@ -1,5 +1,10 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        """滑动窗口查找无重复子串。
+
+        时间复杂度: O(n)，n 为字符串长度。
+        空间复杂度: O(min(n, m))，m 为字符集大小，最多使用哈希集合存储窗口内字符。
+        """
         left = 0
         char_set = set()
         max_length = 0

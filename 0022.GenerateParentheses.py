@@ -1,5 +1,10 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
+        """回溯生成有效括号组合。
+
+        时间复杂度: O(C_n)，Catalan 数量级，最坏情况约 O(4^n / n^{3/2})。
+        空间复杂度: O(n)，递归栈深度和当前构建字符串长度。
+        """
         result = []
 
         def backtrack(open_count, closed_count, current_string):

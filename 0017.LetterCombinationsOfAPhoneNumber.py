@@ -1,5 +1,10 @@
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
+        """回溯生成电话号码字母组合。
+
+        时间复杂度: O(4^n * n)，n 为输入数字长度，最坏情况下每个数字映射 4 个字母。
+        空间复杂度: O(n)，递归调用栈深度和当前构造字符串长度。
+        """
         if not digits:
             return []
         

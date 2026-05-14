@@ -1,5 +1,10 @@
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
+        """排序+双指针求三数之和。
+
+        时间复杂度: O(n^2)，n 为数组长度。
+        空间复杂度: O(1)，不考虑返回结果所占空间。
+        """
         # 先排序，这样方便去重，方便查找，而且这道题总体的复杂度是O(n^2), 排序的时间复杂度是O(nlogn)，所以排序相当于是免费的
         nums.sort()
         result = []

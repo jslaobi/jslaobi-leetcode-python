@@ -5,6 +5,11 @@
 #         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        """链表逐位相加。
+
+        时间复杂度: O(max(m,n))，m,n 为两条链表长度。
+        空间复杂度: O(1)，只使用常数级额外指针空间（返回结果链表不计入额外空间）。
+        """
         curr = ListNode(0)
         dummy = curr
         carry = 0

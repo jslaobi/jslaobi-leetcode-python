@@ -5,6 +5,11 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        """合并两个已排序链表。
+
+        时间复杂度: O(m+n)，m,n 为两个链表长度。
+        空间复杂度: O(1)，只使用常数级指针空间。
+        """
         curr = ListNode(0)
         dummy = curr
 

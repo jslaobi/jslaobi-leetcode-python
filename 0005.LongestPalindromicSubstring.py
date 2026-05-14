@@ -1,5 +1,10 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        """中心扩展法查找最长回文子串。
+
+        时间复杂度: O(n^2)，n 为字符串长度。
+        空间复杂度: O(1)，只使用常数额外空间。
+        """
         if not s:
             return ""
         length = len(s)

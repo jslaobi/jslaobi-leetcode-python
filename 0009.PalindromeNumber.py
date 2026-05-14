@@ -1,5 +1,10 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
+        """整数回文判断（数学方法）。
+
+        时间复杂度: O(log|x|)，|x| 的位数。
+        空间复杂度: O(1)，只使用常数级额外变量。
+        """
         if x < 0 or (x != 0 and x % 10 == 0):
             return False
         # 这道题的进阶要求是不允许把整数转成字符串然后用双指针来比较字符，所以我们需要通过%和//来逐位处理整数。

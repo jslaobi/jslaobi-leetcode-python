@@ -1,5 +1,10 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        """栈验证括号匹配。
+
+        时间复杂度: O(n)，n 为字符串长度。
+        空间复杂度: O(n)，用于存储未闭合的括号。
+        """
         mappings = {
             "(": ")",
             "{": "}",
