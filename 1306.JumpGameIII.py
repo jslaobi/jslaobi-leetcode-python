@@ -1,7 +1,7 @@
 class Solution:
     def canReach(self, arr: List[int], start: int) -> bool:
         queue = deque([start])
-        visited = set([start])
+        visited = {start}
 
         while queue:
             current = queue.popleft()
