@@ -1,5 +1,10 @@
 class Solution:
     def minJumps(self, arr: List[int]) -> int:
+        """BFS 计算最少跳跃次数。
+
+        时间复杂度: O(n)，n 为数组长度。
+        空间复杂度: O(n)，用于图映射和队列。
+        """
         length = len(arr)
 
         if length <= 1:

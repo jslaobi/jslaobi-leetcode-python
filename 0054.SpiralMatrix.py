@@ -1,5 +1,10 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        """按螺旋顺序遍历矩阵。
+
+        时间复杂度: O(m*n)，m 和 n 分别为行数和列数。
+        空间复杂度: O(1)，不包括结果列表。
+        """
         if not matrix or not matrix[0]:
             return []
         

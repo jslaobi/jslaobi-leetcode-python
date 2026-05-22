@@ -1,5 +1,10 @@
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        """合并区间。
+
+        时间复杂度: O(n log n)，n 为区间数量。
+        空间复杂度: O(n)，用于结果列表。
+        """
         if len(intervals) <= 1:
             return intervals
         

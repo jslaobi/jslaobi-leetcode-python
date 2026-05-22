@@ -1,5 +1,10 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
+        """二分查找求平方根。
+
+        时间复杂度: O(log x)，x 为输入值。
+        空间复杂度: O(1)。
+        """
         if x < 2:
             return x
 

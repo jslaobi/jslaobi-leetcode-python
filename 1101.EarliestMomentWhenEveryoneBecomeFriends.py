@@ -1,5 +1,10 @@
 class unionFind:
     def __init__(self, size: int):
+        """并查集求最早交友时间。
+
+        时间复杂度: O(L log L)，L 为日志条目数。
+        空间复杂度: O(n)，用于并查集。
+        """
         self.parent = list(range(size))
         self.rank = [1] * size
         self.count = size

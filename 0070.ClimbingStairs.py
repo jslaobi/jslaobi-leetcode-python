@@ -1,5 +1,10 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
+        """递推计算爬楼梯方案数。
+
+        时间复杂度: O(n)，n 为楼梯阶数。
+        空间复杂度: O(1)。
+        """
         if n <= 2:
             return n
         

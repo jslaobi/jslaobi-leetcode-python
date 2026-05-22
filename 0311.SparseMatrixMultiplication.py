@@ -1,5 +1,10 @@
 class Solution:
     def multiply(self, mat1: List[List[int]], mat2: List[List[int]]) -> List[List[int]]:
+        """稀疏矩阵乘法。
+
+        时间复杂度: O(m * n * k) 最坏情况，m、k、n 分别为矩阵维度。
+        空间复杂度: O(m*k + k*n)，用于压缩矩阵存储。
+        """
         m = len(mat1)
         k = len(mat1[0])
         n = len(mat2[0])

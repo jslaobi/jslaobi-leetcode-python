@@ -1,5 +1,10 @@
 class Solution:
     def canReach(self, arr: List[int], start: int) -> bool:
+        """BFS 检查能否到达值为 0 的位置。
+
+        时间复杂度: O(n)，n 为数组长度。
+        空间复杂度: O(n)，用于队列和访问集合。
+        """
         queue = deque([start])
         visited = {start}
 

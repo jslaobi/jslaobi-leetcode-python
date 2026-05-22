@@ -1,5 +1,10 @@
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
+        """给数字数组加一。
+
+        时间复杂度: O(n)，n 为数字长度。
+        空间复杂度: O(1)。
+        """
         length = len(digits) - 1
 
         for i in range(length, -1, -1):

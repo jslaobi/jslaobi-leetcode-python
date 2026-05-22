@@ -1,5 +1,10 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
+        """回溯生成子集。
+
+        时间复杂度: O(2^n)，n 为数组长度。
+        空间复杂度: O(n)，用于递归栈和临时子集。
+        """
         result = []
 
         def dfs(i, current):

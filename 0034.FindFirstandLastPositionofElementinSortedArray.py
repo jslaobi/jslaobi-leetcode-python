@@ -1,5 +1,10 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
+        """在排序数组中查找目标值的起始和结束位置。
+
+        时间复杂度: O(log n)，n 为数组长度。
+        空间复杂度: O(1)。
+        """
         def binary_search(left_bias: bool) -> int:
             left = 0
             right = len(nums) - 1

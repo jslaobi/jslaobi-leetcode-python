@@ -1,5 +1,10 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        """回溯寻找组合总和。
+
+        时间复杂度: O(2^n)（指数级），n 为候选项数量。
+        空间复杂度: O(n)，递归栈深度和当前组合列表。
+        """
         result = []
 
         def backtrack(i: int, current_list: List[int], current_sum: int):

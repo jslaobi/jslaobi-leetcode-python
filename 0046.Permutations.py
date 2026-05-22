@@ -1,5 +1,10 @@
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
+        """回溯生成所有排列。
+
+        时间复杂度: O(n * n!)，n 为数组长度。
+        空间复杂度: O(n)，用于递归栈和临时排列。
+        """
         result = []
 
         def dfs(current_list: List[int]):

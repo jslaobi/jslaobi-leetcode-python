@@ -1,5 +1,10 @@
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
+        """贪心算法判断能否跳到数组末尾。
+
+        时间复杂度: O(n)，n 为数组长度。
+        空间复杂度: O(1)。
+        """
         # 从后向前解法:
         goal = len(nums) - 1
 

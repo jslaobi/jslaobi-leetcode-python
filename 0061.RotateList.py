@@ -5,6 +5,11 @@
 #         self.next = next
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+        """旋转链表。
+
+        时间复杂度: O(n)，n 为链表长度。
+        空间复杂度: O(1)。
+        """
         if not head or not head.next or k == 0:
             return head
         
