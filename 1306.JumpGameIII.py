@@ -1,3 +1,5 @@
+from collections import deque
+
 class Solution:
     def canReach(self, arr: List[int], start: int) -> bool:
         """BFS 检查能否到达值为 0 的位置。

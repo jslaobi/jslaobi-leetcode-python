@@ -1,3 +1,5 @@
+from collections import deque
+
 class Solution:
     def minJumps(self, arr: List[int]) -> int:
         """BFS 计算最少跳跃次数。
