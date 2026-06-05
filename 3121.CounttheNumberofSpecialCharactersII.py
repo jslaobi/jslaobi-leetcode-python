@@ -1,5 +1,9 @@
 class Solution:
     def numberOfSpecialChars(self, word: str) -> int:
+        """
+        时间复杂度: O(n)，n 为字符串长度。
+        空间复杂度: O(1)。
+        """
         states = [0] * 26
         # 0 - 初始状态
         # 1 - 发现一个小写字母

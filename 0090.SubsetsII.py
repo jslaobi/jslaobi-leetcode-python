@@ -1,5 +1,9 @@
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+        """
+        时间复杂度: O(2^n)，n 为数组长度。
+        空间复杂度: O(n)，用于递归栈和临时子集。
+        """
         result = []
         nums.sort()
 

@@ -2,6 +2,10 @@ import math
 
 class Solution:
     def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        """
+        时间复杂度: O(n)，n 为数组长度。
+        空间复杂度: O(n)。
+        """
         # 实时更新的最大值,将来作为函数返回值
         result = -math.inf
         # 当前处理的数为止的数字和

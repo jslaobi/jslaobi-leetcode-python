@@ -1,5 +1,9 @@
 class Solution:
     def earliestFinishTime(self, landStartTime: List[int], landDuration: List[int], waterStartTime: List[int], waterDuration: List[int]) -> int:
+        """
+        时间复杂度: O(m * n)，m 和 n 为两个路线数量。
+        空间复杂度: O(1)。
+        """
         m = len(landStartTime)
         n = len(waterStartTime)
 

@@ -1,5 +1,9 @@
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        """
+        时间复杂度: O(n^2)，n 为城市数量。
+        空间复杂度: O(n)。
+        """
         n = len(isConnected)
         parent = list(range(n))
         rank = [0] * n 

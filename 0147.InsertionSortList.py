@@ -1,10 +1,14 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
 class Solution:
     def insertionSortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        时间复杂度: O(n^2)，n 为链表长度。
+        空间复杂度: O(1)。
+        Definition for singly-linked list.
+        class ListNode:
+        def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+        """
         if not head or not head.next:
             return head
         dummy = ListNode(-5001)

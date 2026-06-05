@@ -1,5 +1,9 @@
 class Solution:
     def numberOfSpecialChars(self, word: str) -> int:
+        """
+        时间复杂度: O(n)，n 为字符串长度。
+        空间复杂度: O(1)。
+        """
         lower_set = { char for char in word if char.islower() }
         # lower_set = set()
         # for char in word:

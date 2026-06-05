@@ -1,5 +1,9 @@
 class Solution:
     def calculateMinimumHP(self, dungeon: List[List[int]]) -> int:
+        """
+        时间复杂度: O(m * n)，m 和 n 为网格的行列数。
+        空间复杂度: O(m * n)。
+        """
         m = len(dungeon)
         n = len(dungeon[0])
 

@@ -1,5 +1,9 @@
 class Solution:
     def findRepeatedDnaSequences(self, s: str) -> List[str]:
+        """
+        时间复杂度: O(n)，n 为字符串长度。
+        空间复杂度: O(n)。
+        """
         if len(s) < 10:
             return []
         

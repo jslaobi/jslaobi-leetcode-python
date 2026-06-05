@@ -1,5 +1,9 @@
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+        """
+        时间复杂度: O(n)，n 为加油站数量。
+        空间复杂度: O(1)。
+        """
         if sum(gas) < sum(cost):
             return -1
         

@@ -1,5 +1,9 @@
 class Solution:
     def totalWaviness(self, num1: int, num2: int) -> int:
+        """
+        时间复杂度: O((b - a) * d)，范围长度乘以数字位数。
+        空间复杂度: O(1)。
+        """
         def getWaviness(num: int):
             s = str(num)
             waviness = 0

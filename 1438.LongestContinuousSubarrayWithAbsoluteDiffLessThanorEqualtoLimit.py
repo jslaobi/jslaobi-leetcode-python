@@ -1,5 +1,9 @@
 class Solution:
     def longestSubarray(self, nums: List[int], limit: int) -> int:
+        """
+        时间复杂度: O(n)，n 为数组长度。
+        空间复杂度: O(n)。
+        """
         max_dq = deque()
         min_dq = deque()
         left = 0

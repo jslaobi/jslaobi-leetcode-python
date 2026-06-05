@@ -2,6 +2,10 @@ from collections import deque, Counter
 
 class FirstUnique:
     def __init__(self, nums: list[int]):
+        """
+        时间复杂度: O(1) 均摊。
+        空间复杂度: O(n)。
+        """
         self.counts = Counter(nums)
         self.queue = deque(nums)
     

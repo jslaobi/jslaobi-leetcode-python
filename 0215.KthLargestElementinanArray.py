@@ -2,6 +2,10 @@ import heapq
 
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
+        """
+        时间复杂度: O(n log k)，n 为数组长度，k 为第 k 个最大元素。
+        空间复杂度: O(k)。
+        """
         min_heap = []
         
         for num in nums:

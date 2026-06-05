@@ -1,5 +1,9 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
+        """
+        时间复杂度: O(n)，n 为房间数量。
+        空间复杂度: O(1)。
+        """
         if not nums:
             return 0
         if len(nums) == 1:

@@ -1,5 +1,9 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+        """
+        时间复杂度: O(n)，n 为数组长度。
+        空间复杂度: O(1)。
+        """
         if not nums:
             return 0
 

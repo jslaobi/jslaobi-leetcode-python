@@ -1,5 +1,9 @@
 class Solution:
     def getAverages(self, nums: List[int], k: int) -> List[int]:
+        """
+        时间复杂度: O(n)，n 为数组长度。
+        空间复杂度: O(1)。
+        """
         n = len(nums)
         result = [-1] * n
         # 两个半径加中心点

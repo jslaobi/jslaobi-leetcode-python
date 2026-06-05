@@ -1,6 +1,10 @@
 class Spreadsheet:
 
     def __init__(self, rows: int):
+        """
+        时间复杂度: O(1)，平均情况。
+        空间复杂度: O(n)，n 为已设置单元格数。
+        """
         self.cells = {}
 
     def setCell(self, cell: str, value: int) -> None:

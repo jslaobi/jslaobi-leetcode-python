@@ -1,5 +1,9 @@
 class Solution:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
+        """
+        时间复杂度: O(m * n)，m 和 n 为矩阵行列数。
+        空间复杂度: O(m * n)。
+        """
         if not matrix:
             return 0
         

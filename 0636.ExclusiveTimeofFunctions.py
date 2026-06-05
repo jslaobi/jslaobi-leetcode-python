@@ -1,5 +1,9 @@
 class Solution:
     def exclusiveTime(self, n: int, logs: List[str]) -> List[int]:
+        """
+        时间复杂度: O(n)，n 为日志条目数。
+        空间复杂度: O(n)。
+        """
         # result: 数组里第n个任务的用时
         result = [0] * n
         # stack: 正在运行和等待运行的任务

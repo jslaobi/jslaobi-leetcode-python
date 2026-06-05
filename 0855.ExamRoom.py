@@ -3,6 +3,10 @@ import bisect
 class ExamRoom:
 
     def __init__(self, n: int):
+        """
+        时间复杂度: seat O(n)，leave O(n)。
+        空间复杂度: O(n)。
+        """
         self.n = n
         self.students = []
 

@@ -1,5 +1,9 @@
 class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
+        """
+        时间复杂度: O(n^2)，n 为三角形元素总数。
+        空间复杂度: O(n)。
+        """
         dp = triangle[-1][:]
         # len(triangle) - 2: 从倒数第二层开始
         # -1: 一直到最上面一层(因为range不包括当前数值,所以是-1而不是0)

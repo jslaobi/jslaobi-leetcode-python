@@ -1,5 +1,9 @@
 class Solution:
     def validPath(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+        """
+        时间复杂度: O(n + m)，n 为节点数，m 为边数。
+        空间复杂度: O(n)。
+        """
         # parent = [0, 1, 2, ..., n-1]
         parent = list(range(n))
         # rank = [1, 1, 1, ..., 1]

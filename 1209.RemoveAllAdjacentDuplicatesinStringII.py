@@ -1,5 +1,9 @@
 class Solution:
     def removeDuplicates(self, s: str, k: int) -> str:
+        """
+        时间复杂度: O(n)，n 为字符串长度。
+        空间复杂度: O(n)。
+        """
         stack = []
 
         for char in s:

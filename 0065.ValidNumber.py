@@ -1,5 +1,9 @@
 class Solution:
     def isNumber(self, s: str) -> bool:
+        """
+        时间复杂度: O(n)，n 为字符串长度。
+        空间复杂度: O(1)。
+        """
         seen_digit = False
         seen_exponent = False
         seen_dot = False

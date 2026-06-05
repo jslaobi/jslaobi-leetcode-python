@@ -1,6 +1,10 @@
 class MyQueue:
 
     def __init__(self):
+        """
+        时间复杂度: push O(1)，pop/peek amortized O(1)。
+        空间复杂度: O(n)。
+        """
         self.stack_in = []
         self.stack_out = []
 

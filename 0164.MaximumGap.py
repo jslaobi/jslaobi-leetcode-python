@@ -2,6 +2,10 @@ import math
 
 class Solution:
     def maximumGap(self, nums: List[int]) -> int:
+        """
+        时间复杂度: O(n)，n 为数组长度。
+        空间复杂度: O(n)。
+        """
         if len(nums) < 2:
             return 0
         

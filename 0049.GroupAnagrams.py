@@ -1,5 +1,9 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        """
+        时间复杂度: O(n * k)，n 为字符串数量，k 为平均字符串长度。
+        空间复杂度: O(n * k)。
+        """
         anagrams_map = defaultdict(list)
 
         for word in strs:

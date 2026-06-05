@@ -1,5 +1,9 @@
 class Solution:
     def minElement(self, nums: List[int]) -> int:
+        """
+        时间复杂度: O(n * d)，n 为数组长度，d 为数字位数。
+        空间复杂度: O(1)。
+        """
         min_sum = float('inf')
 
         for num in nums:

@@ -1,5 +1,9 @@
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
+        """
+        时间复杂度: O(m * n)，m 和 n 为网格的行列数。
+        空间复杂度: O(n)。
+        """
         row = [1] * n
 
         for _ in range(1, m):

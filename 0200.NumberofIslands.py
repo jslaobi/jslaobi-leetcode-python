@@ -1,5 +1,9 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
+        """
+        时间复杂度: O(m * n)，m 和 n 为网格的行列数。
+        空间复杂度: O(m * n)。
+        """
         result = 0
 
         def dfs(r: int, c: int) -> None:

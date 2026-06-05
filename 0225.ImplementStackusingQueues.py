@@ -2,6 +2,10 @@ from collections import deque
 class MyStack:
 
     def __init__(self):
+        """
+        时间复杂度: push O(n)，pop/top/empty O(1)。
+        空间复杂度: O(n)。
+        """
         self.queue = deque()
 
     def push(self, x: int) -> None:

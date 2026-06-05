@@ -3,6 +3,10 @@ from collections import deque
 class MovingAverage:
 
     def __init__(self, size: int):
+        """
+        时间复杂度: O(1) 每次调用。
+        空间复杂度: O(k)，k 为窗口大小。
+        """
         self.queue = deque()
         self.size = size
         self.sum = 0

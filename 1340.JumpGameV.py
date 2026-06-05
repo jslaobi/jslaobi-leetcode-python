@@ -1,5 +1,9 @@
 class Solution:
     def maxJumps(self, arr: List[int], d: int) -> int:
+        """
+        时间复杂度: O(n * d)，n 为数组长度，d 为最大跳跃距离。
+        空间复杂度: O(n)。
+        """
         n = len(arr)
         memo = [0] * n
 

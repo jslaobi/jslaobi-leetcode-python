@@ -1,11 +1,14 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+        """
+        时间复杂度: O(n)，n 为链表总长度。
+        空间复杂度: O(1)。
+        Definition for singly-linked list.
+        class ListNode:
+        def __init__(self, x):
+        self.val = x
+        self.next = None
+        """
         if not headA or not headB:
             return None
         curr1 = headA
