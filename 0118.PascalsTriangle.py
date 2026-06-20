@@ -1,5 +1,9 @@
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         if numRows == 0:
             return []
         

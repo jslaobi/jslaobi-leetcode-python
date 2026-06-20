@@ -1,5 +1,9 @@
 class Solution:
     def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         n = len(nums)
         result = [0] * n
         left = 0

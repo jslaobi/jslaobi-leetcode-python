@@ -2,6 +2,10 @@ import math
 
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        """
+        时间复杂度: O(n log n)，
+        空间复杂度: O(1)。
+        """
         # 把长度较小的放在前面, 这样等下计算partitionY = (m + n + 1) // 2 - partitionX的时候不出出现负数index
         if len(nums1) > len(nums2):
             nums1, nums2 = nums2, nums1
@@ -53,7 +57,6 @@ class Solution:
                 high = partition_x - 1
             else: 
                 low = partition_x + 1
-
 
 
 

@@ -7,6 +7,10 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        """
+        时间复杂度: O(log n)，
+        空间复杂度: O(1)。
+        """
         if not root:
             return None
         # 找到了p或者q就立刻返回

@@ -1,5 +1,9 @@
 class Solution:
     def calculate(self, s: str) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         total_sum = 0
         last_num = 0
         current_num = 0

@@ -1,5 +1,9 @@
 class Solution:
     def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         i = 0
         j = 0
         result = []
@@ -24,4 +28,3 @@ class Solution:
 
         return result
         
-

@@ -1,6 +1,10 @@
 import math
 class Solution:
     def findUnsortedSubarray(self, nums: List[int]) -> int:
+        """
+        时间复杂度: O(n log n)，
+        空间复杂度: O(1)。
+        """
         n = len(nums)
         if n <= 1:
             return 0

@@ -2,6 +2,10 @@ import collections
 
 class Solution:
     def calculate(self, s: str) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(n)。
+        """
         # Step 1: Remove all spaces and convert the string into a Queue
         # deque (Double Ended Queue) allows O(1) pops from the left side
         s = s.replace(" ", "")

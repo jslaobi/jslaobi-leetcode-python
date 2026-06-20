@@ -1,5 +1,9 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         # # 题目最下面保证了两个字符串长度相等,所以不需要
         # if len(s) != len(t):
         #     return False
@@ -17,4 +21,3 @@ class Solution:
             map_t_to_s[t[i]] = s[i]
         
         return True
-

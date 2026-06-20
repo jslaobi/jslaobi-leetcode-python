@@ -2,6 +2,10 @@ from collections import deque
 
 class HitCounter:
     def __init__(self):
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(n)。
+        """
         # 记录当前的秒数timestamp
         self.times = [0] * 300
         # 记录对应的hits数量

@@ -8,6 +8,10 @@
 
 class Solution:
     def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
+        """
+        时间复杂度: O(m * n)，
+        空间复杂度: O(1)。
+        """
         rows, cols = binaryMatrix.dimensions()
 
         row = 0

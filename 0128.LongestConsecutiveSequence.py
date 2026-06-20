@@ -1,5 +1,9 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         # 转换成set以获得O(1)的搜索速度
         nums_set = set(nums)
         max_streak = 0

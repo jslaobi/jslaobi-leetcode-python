@@ -1,5 +1,9 @@
 class Node:
     def __init__(self, key=0, val=0):
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         self.key = key
         self.val = val
         self.prev = None

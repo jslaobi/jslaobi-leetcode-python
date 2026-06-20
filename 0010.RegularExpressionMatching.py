@@ -1,5 +1,9 @@
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(n)。
+        """
         m = len(s)
         n = len(p)
 
@@ -31,4 +35,3 @@ class Solution:
                             dp[i][j] = dp[i - 1][j]
         
         return dp[m][n]
-

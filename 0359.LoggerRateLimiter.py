@@ -1,5 +1,9 @@
 class Logger:
     def __init__(self):
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(n)。
+        """
         # Dictionary to store {message: next_allowed_timestamp}
         self.message_dict = {}
 

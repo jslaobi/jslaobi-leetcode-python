@@ -1,5 +1,9 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         if not height:
             return 0
         

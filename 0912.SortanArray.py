@@ -1,5 +1,9 @@
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
+        """
+        时间复杂度: O(n log n)，
+        空间复杂度: O(1)。
+        """
         # 我们实现merge sort
         def merge_sort(left, right):
             if left >= right:

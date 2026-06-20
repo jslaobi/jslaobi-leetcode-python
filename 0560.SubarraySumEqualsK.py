@@ -1,5 +1,9 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         count = 0
         curr_sum = 0
 

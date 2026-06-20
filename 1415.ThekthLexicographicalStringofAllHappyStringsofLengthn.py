@@ -1,5 +1,9 @@
 class Solution:
     def getHappyString(self, n: int, k: int) -> str:
+        """
+        时间复杂度: O(2^n)，
+        空间复杂度: O(n)。
+        """
         result = []
 
         def backtrack(path):

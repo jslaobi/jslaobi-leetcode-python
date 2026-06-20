@@ -1,5 +1,9 @@
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        """
+        时间复杂度: O(n log n)，
+        空间复杂度: O(1)。
+        """
         nums.sort()
         n = len(nums)
         result = []

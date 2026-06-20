@@ -1,5 +1,9 @@
 class Solution:
     def calculate(self, s: str) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         result = 0
         curr_num = 0
         sign = 1

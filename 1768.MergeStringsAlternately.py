@@ -1,5 +1,9 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         i = 0
         j = 0
         result = []

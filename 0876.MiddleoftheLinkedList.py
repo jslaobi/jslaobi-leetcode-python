@@ -5,6 +5,10 @@
 #         self.next = next
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         if not head:
             return None
         

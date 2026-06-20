@@ -1,5 +1,9 @@
 class TrieNode:
     def __init__(self):
+        """
+        时间复杂度: O(n log n)，
+        空间复杂度: O(1)。
+        """
         self.children = {}
         self.is_file = False
         self.content = ""

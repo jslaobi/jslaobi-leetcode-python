@@ -2,6 +2,10 @@ from collections import deque, defaultdict
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(n)。
+        """
         # 示例: { 0: [1, 2], 1: [3], 2: [3] }, 0号课程解锁1,2号课程. 1号和2号课程解锁3号课程
         adjacency_list = defaultdict(list)
 
@@ -33,6 +37,5 @@ class Solution:
                     queue.append(neighbor)
         
         return result == numCourses
-
 
 

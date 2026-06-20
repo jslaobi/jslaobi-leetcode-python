@@ -1,5 +1,9 @@
 class Solution:
     def champagneTower(self, poured: int, query_row: int, query_glass: int) -> float:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         # 先把所有的酒倒进第一个杯子
         row = [poured]
 

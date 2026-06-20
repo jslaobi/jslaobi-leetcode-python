@@ -1,5 +1,9 @@
 class Solution:
     def angleClock(self, hour: int, minutes: int) -> float:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         # 分钟指针每分钟移动6度(360度除以60分钟)
         minute_angle = minutes * 6
 

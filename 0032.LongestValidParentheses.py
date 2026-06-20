@@ -1,5 +1,9 @@
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(n)。
+        """
         # 一开始放一个dummy值, 这样就可以判断:如果stack不是空,说明括号反而是匹配的. 如果stack为空,则出现了不匹配现象
         stack = [-1]
         max_length = 0

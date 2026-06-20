@@ -1,5 +1,9 @@
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         # 先用前k个元素(0 : k-1)的和作为current_sum和max_sum的初始值
         current_sum = sum(nums[:k])
         max_sum = current_sum

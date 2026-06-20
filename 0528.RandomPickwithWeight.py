@@ -1,6 +1,10 @@
 class Solution:
 
     def __init__(self, w: List[int]):
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         # 比如[1, 3, 2], prefix_sum就是[1, 4, 6]
         self.prefix_sum = []
         # 帮助计算prefix_sum

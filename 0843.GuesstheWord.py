@@ -9,6 +9,10 @@ import random
 
 class Solution:
     def findSecretWord(self, words: List[str], master: 'Master') -> None:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         def get_matches(word1, word2):
             matches = 0
 
@@ -54,4 +58,3 @@ class Solution:
                         new_candidates.append(word)
             
                 candidates = new_candidates
-

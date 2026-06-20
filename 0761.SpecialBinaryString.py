@@ -1,5 +1,9 @@
 class Solution:
     def makeLargestSpecial(self, s: str) -> str:
+        """
+        时间复杂度: O(2^n)，
+        空间复杂度: O(n)。
+        """
         count = 0
         i = 0
         result = []

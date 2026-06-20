@@ -1,5 +1,9 @@
 class Solution:
     def leftRightDifference(self, nums: List[int]) -> List[int]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         left_sum = 0
         right_sum = sum(nums)
         answer = []
@@ -9,4 +13,3 @@ class Solution:
             left_sum += num
         
         return answer
-

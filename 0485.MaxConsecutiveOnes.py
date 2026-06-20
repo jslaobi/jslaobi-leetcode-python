@@ -1,5 +1,9 @@
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         total_count = 0
         current_count = 0
 

@@ -2,6 +2,10 @@ import math
 
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         def can_finish(k: int) -> bool:
             count = 0
             for pile in piles:

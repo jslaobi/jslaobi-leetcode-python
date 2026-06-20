@@ -2,6 +2,10 @@ from collections import deque, defaultdict
 
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(n)。
+        """
         adjacency_list = defaultdict(list)
         in_degree = [0] * numCourses
         path = []

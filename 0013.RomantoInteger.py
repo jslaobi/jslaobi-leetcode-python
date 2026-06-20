@@ -1,5 +1,9 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         roman_values = {
             "I": 1,
             "V": 5,

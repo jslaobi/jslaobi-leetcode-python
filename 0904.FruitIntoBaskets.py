@@ -2,6 +2,10 @@ import collections
 
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         basket = collections.defaultdict(int)
         # 使用滑动窗口, 始终保留两种水果
         left = 0

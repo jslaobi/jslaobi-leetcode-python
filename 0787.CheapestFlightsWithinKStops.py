@@ -1,6 +1,10 @@
 import math
 class Solution:
     def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         prices = [math.inf] * n
         prices[src] = 0
 

@@ -1,5 +1,9 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         left = 0
         right = len(numbers) - 1
 

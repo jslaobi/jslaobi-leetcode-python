@@ -5,6 +5,10 @@
 #         self.next = next
 class Solution:
     def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         # 如果只有一个节点, 删除后也为None
         if not head or not head.next:
             return None

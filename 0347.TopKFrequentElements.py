@@ -1,5 +1,9 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         count = Counter(nums)
 
         freq = [[] for _ in range(len(nums) + 1)]
@@ -15,4 +19,3 @@ class Solution:
                 result.append(num)
                 if len(result) == k:
                     return result
-

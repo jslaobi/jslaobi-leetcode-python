@@ -5,6 +5,10 @@
 #         self.next = next
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         if not head or not head.next:
             return True
         

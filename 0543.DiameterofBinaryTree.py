@@ -6,6 +6,10 @@
 #         self.right = right
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(h)。
+        """
         self.max_diameter = 0
 
         def dfs(node):

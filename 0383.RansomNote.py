@@ -1,5 +1,9 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         if len(ransomNote) > len(magazine):
             return False
         

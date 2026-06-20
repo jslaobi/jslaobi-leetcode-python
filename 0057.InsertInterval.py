@@ -1,5 +1,9 @@
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         result = []
         i = 0
         n =len(intervals)

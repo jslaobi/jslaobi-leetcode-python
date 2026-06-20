@@ -1,5 +1,9 @@
 class Solution:
     def maxFrequency(self, nums: List[int], k: int) -> int:
+        """
+        时间复杂度: O(n log n)，
+        空间复杂度: O(1)。
+        """
         nums.sort()
 
         left = 0

@@ -1,6 +1,10 @@
 import copy
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
+        """
+        时间复杂度: O(n!)，
+        空间复杂度: O(n)。
+        """
         cols = set()
         #两条对角线上不能有棋子
         pos_diag = set()

@@ -1,5 +1,9 @@
 class Solution:
     def decodeString(self, s: str) -> str:
+        """
+        时间复杂度: O(n)，
+        空间复杂度: O(1)。
+        """
         stack = []
         current_num = 0
         current_string = ""

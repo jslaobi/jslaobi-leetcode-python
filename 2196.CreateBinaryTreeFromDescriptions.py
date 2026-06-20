@@ -6,6 +6,10 @@
 #         self.right = right
 class Solution:
     def createBinaryTree(self, descriptions: List[List[int]]) -> Optional[TreeNode]:
+        """
+        时间复杂度: O(log n)，
+        空间复杂度: O(1)。
+        """
         # 将node存在hashmap里,方便直接查找到任何node. key是值,value是node本身
         nodes = {}
         # 保存所有的子节点,最后不在set里的就是root

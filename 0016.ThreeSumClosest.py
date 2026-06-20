@@ -2,6 +2,10 @@ import math
 
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
+        """
+        时间复杂度: O(n log n)，
+        空间复杂度: O(1)。
+        """
         nums.sort()
 
         result = -math.inf
@@ -25,4 +29,3 @@ class Solution:
                     right -= 1
             
         return result
-
