@@ -1,5 +1,9 @@
 class Solution:
     def maxIceCream(self, costs: List[int], coins: int) -> int:
+        """
+        时间复杂度: O(n log n)。
+        空间复杂度: O(1)。
+        """
         max_cost = max(costs)
         # 按照消耗费用进行分类
         freq = [0] * (max_cost + 1)

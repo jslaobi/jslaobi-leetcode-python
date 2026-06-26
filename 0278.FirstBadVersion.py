@@ -3,6 +3,10 @@
 
 class Solution:
     def firstBadVersion(self, n: int) -> int:
+        """
+        时间复杂度: O(log n)。
+        空间复杂度: O(1)。
+        """
         left = 1
         right = n
 

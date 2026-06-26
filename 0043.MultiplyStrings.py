@@ -1,5 +1,9 @@
 class Solution:
     def multiply(self, num1: str, num2: str) -> str:
+        """
+        时间复杂度: O(n*m)。
+        空间复杂度: O(n+m)。
+        """
         if num1 == "0" or num2 == "0":
             return "0"
         

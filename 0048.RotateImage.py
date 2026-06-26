@@ -1,6 +1,8 @@
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
         """
+            时间复杂度: O(n^2)。
+            空间复杂度: O(1)。
         Do not return anything, modify matrix in-place instead.
         """
         left = 0

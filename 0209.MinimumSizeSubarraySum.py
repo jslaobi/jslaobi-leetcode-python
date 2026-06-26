@@ -2,6 +2,10 @@ import math
 
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         result = math.inf
         curr_sum = 0
         left = 0

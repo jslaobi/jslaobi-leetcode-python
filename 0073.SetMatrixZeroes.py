@@ -1,6 +1,8 @@
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
         """
+            时间复杂度: O(m*n)。
+            空间复杂度: O(1)。
         Do not return anything, modify matrix in-place instead.
         """
         rows = len(matrix)

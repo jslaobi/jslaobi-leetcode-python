@@ -1,6 +1,10 @@
 class Solution:
     # 例如: "the sky", 第一步去除首位的空格
     def reverseWords(self, s: str) -> str:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         def trim_space(s):
             left = 0
             right = len(s) - 1

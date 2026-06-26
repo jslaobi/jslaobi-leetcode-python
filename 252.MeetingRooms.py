@@ -2,6 +2,10 @@ from typing import List
 
 class Solution:
     def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
+        """
+        时间复杂度: O(n log n)。
+        空间复杂度: O(1)。
+        """
         # 按照会议的开始时间排序
         intervals.sort(key=lambda x: x[0])
 

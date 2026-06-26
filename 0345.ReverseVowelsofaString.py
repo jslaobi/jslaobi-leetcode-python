@@ -1,5 +1,9 @@
 class Solution:
     def reverseVowels(self, s: str) -> str:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         # python里不能直接修改字符串,所以要先转换成数组
         char_list = list(s)
         left = 0

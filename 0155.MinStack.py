@@ -1,6 +1,10 @@
 class MinStack:
 
     def __init__(self):
+        """
+        时间复杂度: O(1)。
+        空间复杂度: O(n)。
+        """
         # 两个stack, main stack支持.top()之类的操作, min stack支持.getMin()操作
         self.stack = []
         self.min_stack = []

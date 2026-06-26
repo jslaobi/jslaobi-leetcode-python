@@ -3,6 +3,10 @@ import random
 class RandomizedSet:
 
     def __init__(self):
+        """
+        时间复杂度: O(1)。
+        空间复杂度: O(n)。
+        """
         # 将值对应的index存在hashmap里
         self.val_to_index = {}
         # 将真正的值存在数组里,这样随机取数就可以达到O(1)

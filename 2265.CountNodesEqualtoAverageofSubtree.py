@@ -6,6 +6,10 @@
 #         self.right = right
 class Solution:
     def averageOfSubtree(self, root: TreeNode) -> int:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(h)。
+        """
         self.matching_nodes = 0
 
         def dfs(node: TreeNode) -> tuple:

@@ -3,6 +3,10 @@ from typing import List
 
 class Solution:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        """
+        时间复杂度: O(n log n)。
+        空间复杂度: O(1)。
+        """
         if not intervals:
             return 0
         

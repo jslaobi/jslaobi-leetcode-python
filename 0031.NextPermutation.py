@@ -1,6 +1,8 @@
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
         """
+            时间复杂度: O(n)。
+            空间复杂度: O(1)。
         Do not return anything, modify nums in-place instead.
         """
         n = len(nums) 

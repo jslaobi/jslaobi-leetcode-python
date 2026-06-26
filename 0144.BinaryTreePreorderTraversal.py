@@ -6,6 +6,10 @@
 #         self.right = right
 class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(h)。
+        """
         result = []
 
         def dfs(node):

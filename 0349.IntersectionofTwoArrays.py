@@ -1,5 +1,9 @@
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        """
+        时间复杂度: O(n+m)。
+        空间复杂度: O(min(n,m))。
+        """
         nums1.sort()
         nums2.sort()
 
