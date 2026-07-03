@@ -1,5 +1,9 @@
 class Solution:
     def maximumElementAfterDecrementingAndRearranging(self, arr: List[int]) -> int:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         arr.sort()
 
         # 第一个元素一定是1

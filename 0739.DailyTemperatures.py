@@ -1,5 +1,9 @@
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         n = len(temperatures)
 
         answer = [0] * n

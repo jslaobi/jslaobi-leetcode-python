@@ -2,6 +2,10 @@ from collections import Counter
 
 class Solution:
     def findSubstring(self, s: str, words: List[str]) -> List[int]:
+        """
+        时间复杂度: O(n^2)。
+        空间复杂度: O(1)。
+        """
         if not s or not words:
             return []
         

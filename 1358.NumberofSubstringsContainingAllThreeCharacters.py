@@ -1,5 +1,9 @@
 class Solution:
     def numberOfSubstrings(self, s: str) -> int:
+        """
+        时间复杂度: O(n^2)。
+        空间复杂度: O(1)。
+        """
         counts = {'a': 0, 'b': 0,'c': 0}
         left = 0
         right = 0

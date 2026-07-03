@@ -1,5 +1,9 @@
 class Solution:
     def swimInWater(self, grid: List[List[int]]) -> int:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         n = len(grid)
 
         # 使用min_heap来保证如果遇到高的水位会推到底部,每步只处理当前最低的水位. 这样最先到达右下角(n - 1, n - 1)的就是最短时间

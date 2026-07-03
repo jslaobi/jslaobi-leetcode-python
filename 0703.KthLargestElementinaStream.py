@@ -1,6 +1,10 @@
 class KthLargest:
 
     def __init__(self, k: int, nums: List[int]):
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         self.k = k
         self.min_heap = nums
         heapq.heapify(self.min_heap)

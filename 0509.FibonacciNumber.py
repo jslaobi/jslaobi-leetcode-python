@@ -1,5 +1,9 @@
 class Solution:
     def fib(self, n: int) -> int:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         if n == 0:
             return 0
         if n == 1:
