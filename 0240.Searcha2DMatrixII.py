@@ -1,5 +1,9 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        """
+        时间复杂度: O(m+n)。
+        空间复杂度: O(1)。
+        """
         if not matrix or not matrix[0]:
             return 0
         m = len(matrix)

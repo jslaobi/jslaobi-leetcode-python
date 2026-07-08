@@ -1,5 +1,9 @@
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
+        """
+        时间复杂度: O(m*n)。
+        空间复杂度: O(1)。
+        """
         s_len = len(s)
         p_len = len(p)
         s_index = 0

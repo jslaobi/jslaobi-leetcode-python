@@ -1,5 +1,9 @@
 class Solution:
     def validWordAbbreviation(self, word: str, abbr: str) -> bool:
+        """
+        时间复杂度: O(n*m)。
+        空间复杂度: O(1)。
+        """
         i = 0
         j = 0
 

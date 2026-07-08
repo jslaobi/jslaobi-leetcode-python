@@ -1,5 +1,9 @@
 class Solution:
     def toGoatLatin(self, sentence: str) -> str:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         vowels = set("aeiouAEIOU")
         words = sentence.split()
         result = []

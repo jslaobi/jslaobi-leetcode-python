@@ -1,5 +1,9 @@
 class Solution:
     def numIslands2(self, m: int, n: int, positions: list[list[int]]) -> list[int]:
+        """
+        时间复杂度: O(k*α(n))。
+        空间复杂度: O(n)。
+        """
         island_count = 0
         parent = {}
         result = []

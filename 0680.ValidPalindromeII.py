@@ -1,5 +1,9 @@
 class Solution:
     def validPalindrome(self, s: str) -> bool:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         def isPalindrome(left, right):
             while left < right:
                 if s[left] != s[right]:

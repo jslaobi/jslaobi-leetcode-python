@@ -2,6 +2,10 @@ from collections import deque
 from collections import defaultdict
 class Solution:
     def verticalOrder(self, root: Optional['TreeNode']) -> list[list[int]]:
+        """
+        时间复杂度: O(n)。
+        空间复杂度: O(n)。
+        """
         if not root:
             return []
         column_map = defaultdict(list)

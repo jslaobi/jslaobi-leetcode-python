@@ -1,5 +1,9 @@
 class Solution:
     def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:
+        """
+        时间复杂度: O(n log n)。
+        空间复杂度: O(n)。
+        """
         # 按照起始时间正序, 如果相同的起始时间则结束时间倒序
         intervals.sort(key=lambda x:(x[0], -x[1]))
 

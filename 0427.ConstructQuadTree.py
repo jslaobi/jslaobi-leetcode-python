@@ -1,4 +1,3 @@
-"""
 # Definition for a QuadTree node.
 class Node:
     def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):
@@ -8,10 +7,12 @@ class Node:
         self.topRight = topRight
         self.bottomLeft = bottomLeft
         self.bottomRight = bottomRight
-"""
 
 class Solution:
     def construct(self, grid: List[List[int]]) -> 'Node':
+        """时间复杂度: O(n^2).
+        空间复杂度: O(n^2).
+        """
         def dfs(r, c, length):
             if length == 1:
                 is_one = grid[r][c] == 1

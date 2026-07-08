@@ -1,5 +1,9 @@
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        """
+        时间复杂度: O(n log k)。
+        空间复杂度: O(k)。
+        """
         max_heap = []
 
         for x, y in points:
