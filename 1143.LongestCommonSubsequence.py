@@ -1,5 +1,8 @@
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        """时间复杂度: O(m*n)。
+        空间复杂度: O(m*n)。
+        """
         m = len(text1)
         n = len(text2)
 

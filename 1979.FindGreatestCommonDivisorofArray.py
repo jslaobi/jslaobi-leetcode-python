@@ -1,5 +1,8 @@
 class Solution:
     def findGCD(self, nums: List[int]) -> int:
+        """时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         min_num = min(nums)
         max_num = max(nums)
 

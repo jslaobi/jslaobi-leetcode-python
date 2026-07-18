@@ -3,6 +3,9 @@ import random
 class Solution:
 
     def __init__(self, nums: List[int]):
+        """时间复杂度: O(1)。
+        空间复杂度: O(n)。
+        """
         self.original = nums
         self.array = nums.copy()
 

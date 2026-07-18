@@ -2,6 +2,9 @@ from collections import deque
 
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
+        """时间复杂度: O(m*n)。
+        空间复杂度: O(m*n)。
+        """
         rows = len(grid)
         cols = len(grid[0])
 

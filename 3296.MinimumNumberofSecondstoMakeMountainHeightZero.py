@@ -1,5 +1,8 @@
 class Solution:
     def minNumberOfSeconds(self, mountainHeight: int, workerTimes: List[int]) -> int:
+        """时间复杂度: O(mountainHeight log n)。
+        空间复杂度: O(n)。
+        """
         min_heap = []
         for w in workerTimes:
             # (next_completion_time, base_time, units_done_so_far)

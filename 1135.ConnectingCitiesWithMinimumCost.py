@@ -34,6 +34,9 @@ class UnionFind:
 
 class Solution:
     def minimumCost(self, n: int, connections: list[list[int]]) -> int:
+        """时间复杂度: O(E log E)。
+        空间复杂度: O(n)。
+        """
         uf = UnionFind(n)
 
         # 按照cost从小到大排序

@@ -1,5 +1,8 @@
 class Solution:
     def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
+        """时间复杂度: O(n log n)。
+        空间复杂度: O(n)。
+        """
         stops = []
 
         # 加入数组, 起点+num_passengers, 终点-num_passengers

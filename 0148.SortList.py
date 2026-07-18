@@ -5,6 +5,9 @@
 #         self.next = next
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """时间复杂度: O(n log n)。
+        空间复杂度: O(log n)。
+        """
         if not head or not head.next:
             return head
         

@@ -3,6 +3,9 @@ from collections import defaultdict
 
 class Leaderboard:
     def __init__(self):
+        """时间复杂度: O(1)。
+        空间复杂度: O(n)。
+        """
         self.scores = defaultdict(int)
     
     def addScore(self, playerId: int, score: int) -> None:

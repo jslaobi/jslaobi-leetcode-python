@@ -1,5 +1,8 @@
 class Solution:
     def finalPrices(self, prices: List[int]) -> List[int]:
+        """时间复杂度: O(n)。
+        空间复杂度: O(n)。
+        """
         result = prices.copy()
         # stack中价格升序
         stack = []

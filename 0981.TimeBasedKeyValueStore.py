@@ -4,6 +4,9 @@ import bisect
 class TimeMap:
 
     def __init__(self):
+        """时间复杂度: O(1)。
+        空间复杂度: O(1)。
+        """
         self.store = defaultdict(list)
 
     def set(self, key: str, value: str, timestamp: int) -> None:
