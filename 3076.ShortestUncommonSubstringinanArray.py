@@ -2,6 +2,9 @@ from collections import defaultdict
 
 class Solution:
     def shortestSubstrings(self, arr: List[str]) -> List[str]:
+        """时间复杂度: O(sum(len(s)^2))。
+        空间复杂度: O(sum(len(s)^2))。
+        """
         substring_counts = defaultdict(int)
         result = []
 

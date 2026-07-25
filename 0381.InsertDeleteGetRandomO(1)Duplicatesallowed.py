@@ -4,6 +4,9 @@ import random
 class RandomizedCollection:
 
     def __init__(self):
+        """时间复杂度: O(1)。
+        空间复杂度: O(n)。
+        """
         # 使用一个array和一个hashmap, map的key是数值,value是数值所出现的所有位置,存为一个set
         self.vals = []
         self.indices = defaultdict(set)

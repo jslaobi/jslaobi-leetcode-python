@@ -3,6 +3,9 @@ from collections import defaultdict
 
 class Solution:
     def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
+        """时间复杂度: O(n log k)。
+        空间复杂度: O(k)。
+        """
         # small是max_heap, large是min_heap, 这样我们可以取small的顶部,或者small的顶部和large的顶部的平均值,来计算median
         small = []
         large = []
