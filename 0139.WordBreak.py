@@ -1,5 +1,8 @@
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        """时间复杂度: O(n * m * L)。
+        空间复杂度: O(n)。
+        """
         dp = [False] * (len(s) + 1)
         dp[0] = True
 

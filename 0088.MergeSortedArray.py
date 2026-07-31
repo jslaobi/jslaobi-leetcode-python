@@ -1,5 +1,8 @@
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        """时间复杂度: O(m + n)。
+        空间复杂度: O(1)。
+        """
         """
         Do not return anything, modify nums1 in-place instead.
         """
