@@ -14,6 +14,9 @@ class Solution:
         word_count = len(words)
         total_len = word_len * word_count
 
+        if len(s) < total_len:
+            return []
+        
         word_map = Counter(words)
         result = []
 

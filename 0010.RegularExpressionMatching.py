@@ -24,8 +24,9 @@ class Solution:
                     dp[i][j] = dp[i-1][j-1]
                 elif p[j - 1] == '*':
                     # 两种情况, 第一是a*对应0个a
-                    char_match = dp[i][j] = dp[i][j-2]
-
+                    dp[i][j] = dp[i][j-2]
+                    char_match = dp[i][j]
+                    
                     # 否则,检查a*对应多个a的情况
                     if not char_match:
                         prev_char = p[j - 2]
