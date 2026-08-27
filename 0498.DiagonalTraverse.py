@@ -2,6 +2,9 @@ from collections import defaultdict
 
 class Solution:
     def findDiagonalOrder(self, mat: List[List[int]]) -> List[int]:
+        """时间复杂度: O(m * n)。
+        空间复杂度: O(m * n)。
+        """
         if not mat or not mat[0]:
             return []
         

@@ -1,5 +1,8 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
+        """时间复杂度: O(log x)。
+        空间复杂度: O(1)。
+        """
         if x < 2:
             return x
         

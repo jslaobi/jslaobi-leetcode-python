@@ -2,6 +2,9 @@ from collections import deque
 
 class Solution:
     def shortestPath(self, grid: List[List[int]], k: int) -> int:
+        """时间复杂度: O(m * n * k)。
+        空间复杂度: O(m * n)。
+        """
         m = len(grid)
         n = len(grid[0])
 

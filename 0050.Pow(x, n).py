@@ -1,5 +1,8 @@
 class Solution:
     def myPow(self, x: float, n: int) -> float:
+        """时间复杂度: O(log n)。
+        空间复杂度: O(1)。
+        """
         if n == 0:
             return 1.0
         

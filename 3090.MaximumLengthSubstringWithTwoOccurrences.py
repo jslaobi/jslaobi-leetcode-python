@@ -2,6 +2,9 @@ from collections import defaultdict
 class Solution(object):
     def maximumLengthSubstring(self, s):
         """
+        时间复杂度: O(n)。
+        空间复杂度: O(n)。
+
         :type s: str
         :rtype: int
         """

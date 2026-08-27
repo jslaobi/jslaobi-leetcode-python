@@ -1,5 +1,8 @@
 class Solution:
     def maximumPopulation(self, logs: List[List[int]]) -> int:
+        """时间复杂度: O(n)。
+        空间复杂度: O(1)。
+        """
         population_change = [0] * 101
 
         for birth, death in logs:

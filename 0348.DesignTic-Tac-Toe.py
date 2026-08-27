@@ -2,6 +2,9 @@ class TicTacToe:
 
     def __init__(self, n: int):
         """
+        时间复杂度: O(n)。
+        空间复杂度: O(n)。
+
         Initialize your data structure here.
         """
         self.n = n
@@ -15,6 +18,9 @@ class TicTacToe:
 
     def move(self, row: int, col: int, player: int) -> int:
         """
+        时间复杂度: O(1)。
+        空间复杂度: O(1)。
+
         Player {player} makes a move at ({row}, {col}).
         @param row The row of the board.
         @param col The column of the board.

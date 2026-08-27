@@ -1,5 +1,8 @@
 class Solution:
     def totalNQueens(self, n: int) -> int:
+        """时间复杂度: O(n!)。
+        空间复杂度: O(n)。
+        """
         cols = set()
         pos_diag = set()
         neg_diag = set()

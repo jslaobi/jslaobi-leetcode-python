@@ -1,5 +1,8 @@
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
+        """时间复杂度: O(m * n * 4^L)。
+        空间复杂度: O(L)。
+        """
         rows = len(board)
         cols = len(board[0])
 

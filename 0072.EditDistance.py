@@ -1,5 +1,8 @@
 class Solution:
     def minDistance(self, word1: str, word2: str) -> int:
+        """时间复杂度: O(m * n)。
+        空间复杂度: O(m * n)。
+        """
         m, n = len(word1), len(word2)
 
         dp = [[0] * (n + 1) for _ in range(m+1)]

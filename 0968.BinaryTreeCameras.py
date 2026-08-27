@@ -6,6 +6,9 @@
 #         self.right = right
 class Solution:
     def minCameraCover(self, root: Optional[TreeNode]) -> int:
+        """时间复杂度: O(n)。
+        空间复杂度: O(h)。
+        """
         self.cameras = 0
 
         # 0 - 未被覆盖
